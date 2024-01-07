@@ -1,0 +1,236 @@
+
+* {
+    font-family: helvetica;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* cabeçalho */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: white;
+    background-color: blueviolet;
+    width: 100%;
+}
+
+.logo-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 60px;
+    margin-right: 12px;
+    border: 5px solid white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    background-color: blueviolet;
+    text-decoration: none;
+}
+
+ul li {
+    margin-right: 12px;
+    color: blueviolet;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+/* corpo */
+
+
+main {
+    min-height: 60vh;
+    /* padding: 50px; */
+    background-color: blueviolet;
+}
+
+.container {
+    width: 1000px;
+    height: 600px; 
+    color: white;
+    margin: 10px auto 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 400px;
+    height: 40px;
+    margin: 10px auto 10px auto;
+}
+
+textarea {
+    width: 400px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+.btn-enviar {
+    width: 400px;
+    height: 30px;
+    background-color: white;
+    color: blueviolet;
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.btn-enviar:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    background-color: rgb(183, 119, 244);
+}
+
+
+/* rodapé */
+
+footer {
+    padding: 20px;
+    border-top: 1px solid white;
+    margin-top: 1px;
+    align-items: center;
+    background-color: blueviolet;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    
+    /* cabeçalho */
+    
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 5px solid white;
+        color: white;
+        background-color: blueviolet;
+        width: 90%;
+    }
+    
+    .logo-titulo {
+        display: flex;
+        font-size: 9px;
+        flex-direction: row;
+        align-items: center;
+        vertical-align: middle;
+    }
+    
+    .logo {
+        width: 50px;
+        margin-right: 7px;
+        border: 2px solid white;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        background-color: blueviolet;
+        text-decoration: none;
+    }
+    
+    ul li {
+        margin-right: 5px;
+        margin-bottom: 2px;
+        color: blueviolet;
+        padding: 1px;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: white;
+        border-radius: 20%;
+    }
+    
+    li a {
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    /* corpo */
+    
+    main {
+        height: 100%;
+        /* padding: 50px; */
+        background-color: blueviolet;
+        font-size: 15px;
+    }
+    
+    .container {
+        width: 100%;
+        height: 650px; 
+        color: white;
+        margin: 0px auto 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .input {
+        width: 80%;
+        height: 40px;
+        margin: 10px auto 10px auto;
+    }
+    
+    textarea {
+        width: 80%;
+        height: 60px;
+        margin: 10px auto;
+    }
+    
+    .btn-enviar {
+        width: 80%;
+        height: 30px;
+        background-color: white;
+        color: blueviolet;
+        font-weight: bold;
+        margin: 10px auto;
+    }
+    
+    .btn-enviar:hover {
+        cursor: pointer;
+        transition: 0.5s;
+        color: white;
+        background-color: rgb(183, 119, 244);
+    }
+    
+    /* rodapé */
+    
+    footer {
+        padding: 20px;
+        border-top: 5px solid white;
+        margin-top: 1px;
+        align-items: center;
+        background-color: blueviolet;
+        color: white;
+    }
+    }
